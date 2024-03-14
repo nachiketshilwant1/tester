@@ -36,7 +36,7 @@ exports.postLogin = (req, res, next) => {
    var connectDB = mysql.createConnection({
       host: "localhost",
       user: "root",
-      password: "",
+      password: "Test@12321",
       database: "hotel"
    });
 
@@ -74,7 +74,7 @@ exports.postCreateAccount = (req, res, next) => {
    var connectDB = mysql.createConnection({
       host: "localhost",
       user: "root",
-      password: "",
+      password: "Test@12321",
       database: "hotel"
    });
 
@@ -108,7 +108,7 @@ exports.postCategory = (req, res, next) => {
    var connectDB = mysql.createConnection({
       host: "localhost",
       user: "root",
-      password: "",
+      password: "Test@12321",
       database: "hotel"
    });
 
@@ -143,7 +143,7 @@ exports.postStatus = (req, res, next) => {
    var connectDB = mysql.createConnection({
       host: "localhost",
       user: "root",
-      password: "",
+      password: "Test@12321",
       database: "hotel"
    });
    var date = req.body.date;
@@ -177,7 +177,7 @@ exports.getShowStatus = (req, res, next) => {
    var connectDB = mysql.createConnection({
       host: "localhost",
       user: "root",
-      password: "",
+      password: "Test@12321",
       database: "hotel"
    });
 
@@ -211,7 +211,7 @@ exports.deleteBooking =(req,res,next)=>{
    var connectDB = mysql.createConnection({
       host: "localhost",
       user: "root",
-      password: "",
+      password: "Test@12321",
       database: "hotel"
    });
 
@@ -239,7 +239,6 @@ exports.getContact =(req,res,next)=>{
    else{
       res.render('user/contact', { user: req.session.mail });
    }
-   
 }
 
 //logout
