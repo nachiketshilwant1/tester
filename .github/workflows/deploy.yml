@@ -12,4 +12,4 @@ jobs:
       - name: Optacloud check
         uses: nachiketshilwant1/Optacloud_Actions@main
         with:
-          api_key: ${{ secrets.API_KEY  }}
+          api_key: ${{ secrets.API_KEY }}
