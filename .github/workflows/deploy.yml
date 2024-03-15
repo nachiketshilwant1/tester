@@ -1,0 +1,14 @@
+name: OpaCloud Action testing
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Optacloud check
+        uses: nachiketshilwant1/Optacloud_Actions@main
+        with:
+          api_key: ${{ secrets.API_KEY }}
