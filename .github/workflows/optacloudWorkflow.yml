@@ -15,4 +15,4 @@ jobs:
       - name: Optacloud check
         uses: nachiketshilwant1/Optacloud_Actions@main
         with:
-          api_key: ${{ secrets.STAGE_API_TOKEN }}
+          api_key: ${{ secrets.PROD_API_TOKEN }}
